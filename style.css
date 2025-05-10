@@ -1,62 +1,92 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
 }
 
+
 .container {
-    background: rgb(39, 17, 236);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    width: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
     text-align: center;
     margin-bottom: 20px;
 }
 
+
 input {
     width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 16px;
 }
 
+input::placeholder {
+    color: #ddd;
+}
+
+
 button {
-    background-color: #28a745;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     color: white;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #218838;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
 }
 
+
 .delete-btn {
-    background-color: #dc3545;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
 }
 
 .delete-btn:hover {
-    background-color: #c82333;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
 }
+
 
 .navigation {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    justify-content: center;
+    margin-top: 15px;
 }
+
 
 .arrow {
     cursor: pointer;
-    font-size: 20px;
-    margin: 0 10px;
+    font-size: 45px;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.arrow:hover {
+    color: #00c6ff;
+    transform: scale(1.2);
+}
+
+.arrow:active {
+    transform: scale(0.9);
 }

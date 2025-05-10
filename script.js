@@ -96,3 +96,41 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
 document.getElementById("next").addEventListener("click", () => cadastro.proximoUsuario());
 document.getElementById("prev").addEventListener("click", () => cadastro.usuarioAnterior());
 document.getElementById("deleteUser").addEventListener("click", () => cadastro.removerUsuario());
+function formatarDataParaBrasileiro(data) {
+    let partes = data.split("-");
+    return `${partes[2]}/${partes[1]}/${partes[0]}`; // Transforma YYYY-MM-DD em DD/MM/AAAA
+}
+
+document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let cpf = document.getElementById("cpf").value;
+    let dataNascimento = document.getElementById("dataNascimento").value;
+
+    // Formata a data antes de exibir
+    let dataFormatada = formatarDataParaBrasileiro(dataNascimento);
+
+    document.getElementById("displayNome").textContent = nome;
+    document.getElementById("displayCpf").textContent = cpf;
+    document.getElementById("displayDataNascimento").textContent = dataFormatada;
+});
+function formatarDataParaBrasileiro(data) {
+    let partes = data.split("-");
+    return `${partes[2]}/${partes[1]}/${partes[0]}`;
+}
+
+document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let cpf = document.getElementById("cpf").value;
+    let dataNascimento = document.getElementById("dataNascimento").value;
+
+    // Formata a data antes de exibir
+    let dataFormatada = formatarDataParaBrasileiro(dataNascimento);
+
+    document.getElementById("displayNome").textContent = nome;
+    document.getElementById("displayCpf").textContent = cpf;
+    document.getElementById("displayDataNascimento").textContent = dataFormatada;
+});
