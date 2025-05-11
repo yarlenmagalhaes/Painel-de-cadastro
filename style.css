@@ -81,12 +81,3 @@ button:hover {
     transition: color 0.3s ease, transform 0.3s ease;
     display: inline-block;
 }
-
-.arrow:hover {
-    color: #00c6ff;
-    transform: scale(1.2);
-}
-
-.arrow:active {
-    transform: scale(0.9);
-}

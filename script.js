@@ -108,7 +108,7 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
     let cpf = document.getElementById("cpf").value;
     let dataNascimento = document.getElementById("dataNascimento").value;
 
-    // Formata a data antes de exibir
+
     let dataFormatada = formatarDataParaBrasileiro(dataNascimento);
 
     document.getElementById("displayNome").textContent = nome;
@@ -126,8 +126,7 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
     let nome = document.getElementById("nome").value;
     let cpf = document.getElementById("cpf").value;
     let dataNascimento = document.getElementById("dataNascimento").value;
-
-    // Formata a data antes de exibir
+r
     let dataFormatada = formatarDataParaBrasileiro(dataNascimento);
 
     document.getElementById("displayNome").textContent = nome;
